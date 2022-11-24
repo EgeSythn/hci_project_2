@@ -9,6 +9,7 @@ import {
   Box,
 } from "@mantine/core";
 import headerBackground from "./assets/headerbackground.png";
+import Footer from "./components/Footer.jsx"
 
 function App() {
   return (
@@ -119,6 +120,7 @@ function App() {
           <Center>__GRAPH__</Center>
         </Box>
       </Container>
+      <Footer/>
     </Container>
   );
 }
