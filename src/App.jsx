@@ -9,17 +9,17 @@ import {
   Box,
 } from "@mantine/core";
 import headerBackground from "./assets/headerbackground.png";
-import Footer from "./components/Footer.jsx"
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
     <Container>
       <Header
         style={{
-          width: "120%",
+          width: "400%",
           marginTop: "-1%",
-          marginLeft: "-10%",
-          marginRight: "-10%",
+          marginLeft: "-150%",
+          marginRight: "-150%",
         }}
       >
         <BackgroundImage src={headerBackground} radius="md">
@@ -27,12 +27,13 @@ function App() {
             <Title
               order={1}
               style={{
-                paddingTop: "5%",
-                paddingBottom: "5%",
+                paddingTop: "2%",
+                paddingBottom: "2%",
                 paddingLeft: "10%",
                 paddingRight: "10%",
                 color: "white",
               }}
+              size={50}
             >
               Wealth & Health Inequality
             </Title>
@@ -120,7 +121,7 @@ function App() {
           <Center>__GRAPH__</Center>
         </Box>
       </Container>
-      <Footer/>
+      <Footer />
     </Container>
   );
 }
