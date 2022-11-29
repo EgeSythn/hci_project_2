@@ -9,4 +9,4 @@
 > - Ege Seyithanoglu
 
 > ### Aim
-> Web Visualizations for exploring Accessibility and Design Justice
+> &ensp; Web Visualizations for exploring Accessibility and Design Justice
