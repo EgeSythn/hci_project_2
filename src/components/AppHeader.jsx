@@ -1,7 +1,14 @@
-import { BackgroundImage, Header, Title, Center } from "@mantine/core";
+import {
+  BackgroundImage,
+  Header,
+  Title,
+  Center,
+  useMantineTheme,
+} from "@mantine/core";
 import headerBackground from "../assets/headerbackground.png";
 
 export function AppHeader() {
+  const theme = useMantineTheme();
   return (
     <Header
       style={{
@@ -9,6 +16,7 @@ export function AppHeader() {
         marginLeft: "1%",
         marginRight: "1%",
         marginTop: "1%",
+        backgroundColor: `${theme.colors.gray[0]}`,
       }}
     >
       <BackgroundImage src={headerBackground} radius="md">
@@ -21,6 +29,7 @@ export function AppHeader() {
               paddingTop: "3%",
               paddingBottom: "3%",
               color: "white",
+              fontFamily: "sans-serif",
             }}
             size={40}
           >

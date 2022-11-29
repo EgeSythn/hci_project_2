@@ -10,6 +10,7 @@ function InfoCard(props) {
           paddingLeft: `2.5%`,
           paddingTop: `${top}%`,
           paddingBottom: `5%`,
+          fontFamily: "sans-serif",
         }}
       >
         __TOPIC NAME__
@@ -36,8 +37,9 @@ function InfoCard(props) {
           },
         })}
       >
-        <Center>__GRAPH__</Center>
+        <Center style={{ fontFamily: "sans-serif" }}>__GRAPH__</Center>
       </Box>
+      <Title order={3}></Title>
     </>
   );
 }

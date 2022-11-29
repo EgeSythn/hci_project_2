@@ -1,15 +1,9 @@
-import {
-  AppShell,
-  useMantineTheme,
-  Header,
-  Container,
-  Title,
-  Center,
-  Box,
-} from "@mantine/core";
+import { AppShell, useMantineTheme, Header, Text, Title } from "@mantine/core";
 import AppHeader from "../components/AppHeader.jsx";
 import AppFooter from "../components/AppFooter.jsx";
 import InfoCard from "../components/InfoCard.jsx";
+import DividerImage from "../components/DividerImage.jsx";
+import { faker } from "@faker-js/faker";
 
 function Project() {
   const theme = useMantineTheme();
@@ -25,16 +19,94 @@ function Project() {
         },
       }}
       header={
-        <Header height={100} p="xs">
+        <Header
+          height={100}
+          p="xs"
+          style={{
+            backgroundColor: `${theme.colors.gray[0]}`,
+          }}
+          withBorder={false}
+        >
           <AppHeader />
         </Header>
       }
       footer={<AppFooter />}
     >
+      {/* Introduction */}
+      <Title
+        order={2}
+        style={{
+          paddingLeft: `2.5%`,
+          paddingTop: `7.5%`,
+          fontFamily: "sans-serif",
+        }}
+      >
+        What is this Project About?
+      </Title>
+      <Text
+        style={{
+          paddingTop: "2.5%",
+          paddingBottom: "2.5%",
+          paddingLeft: "5%",
+          paddingRight: "5%",
+          fontFamily: "sans-serif",
+        }}
+      >
+        &emsp; &emsp;{faker.lorem.paragraphs()}
+      </Text>
+      <Text
+        style={{
+          paddingLeft: "5%",
+          paddingRight: "5%",
+          fontFamily: "sans-serif",
+        }}
+      >
+        &emsp; &emsp;{faker.lorem.paragraphs()}
+      </Text>
+      <DividerImage alt="separator 1" />
+
       {/* Section 1*/}
-      <InfoCard top={7.5} bottom={5} />
       <InfoCard top={2.5} bottom={5} />
-      <InfoCard top={2.5} bottom={7.5} />
+      <DividerImage alt="separator 2" />
+      {/* Section 2*/}
+      <InfoCard top={2.5} bottom={5} />
+      <DividerImage alt="separator 3" />
+      {/* Section 3*/}
+      <InfoCard top={2.5} bottom={5} />
+      <DividerImage alt="separator 3" />
+
+      {/* Conclusion & Remarks */}
+      <Title
+        order={2}
+        style={{
+          paddingLeft: `2.5%`,
+          paddingTop: `2.5%`,
+          fontFamily: "sans-serif",
+        }}
+      >
+        Final Remarks and Conclusion
+      </Title>
+      <Text
+        style={{
+          paddingTop: "2.5%",
+          paddingBottom: "2.5%",
+          paddingLeft: "5%",
+          paddingRight: "5%",
+          fontFamily: "sans-serif",
+        }}
+      >
+        &emsp; &emsp;{faker.lorem.paragraphs()}
+      </Text>
+      <Text
+        style={{
+          paddingBottom: "5%",
+          paddingLeft: "5%",
+          paddingRight: "5%",
+          fontFamily: "sans-serif",
+        }}
+      >
+        &emsp; &emsp;{faker.lorem.paragraphs()}
+      </Text>
     </AppShell>
   );
 }

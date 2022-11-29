@@ -1,4 +1,4 @@
-import { Text, Grid, useMantineTheme, Flex, Title } from "@mantine/core";
+import { Text, Grid, useMantineTheme, Flex } from "@mantine/core";
 
 export function AppFooter() {
   const theme = useMantineTheme();
