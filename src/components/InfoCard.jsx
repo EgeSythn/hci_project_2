@@ -1,4 +1,4 @@
-import { Title, Center, Box, Text, Stack } from "@mantine/core";
+import { Title, Center, Box, Text } from "@mantine/core";
 import { faker } from "@faker-js/faker";
 
 function InfoCard(props) {

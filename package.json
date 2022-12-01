@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "prettier": "prettier --write \"src/**/*.{js,jsx}\" --config \".prettierrc\""
+    "prettier": "prettier --write \"src/**/*.{js,jsx}\" --config \".prettierrc\"",
+    "clean_dev": "prettier --write \"src/**/*.{js,jsx}\" --config \".prettierrc\" && vite"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -15,7 +16,7 @@
     "@mantine/hooks": "^5.8.3",
     "@mantine/modals": "^5.8.3",
     "@mantine/notifications": "^5.8.3",
-    "@tabler/icons": "^1.113.0",
+    "@tabler/icons": "^1.114.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3",

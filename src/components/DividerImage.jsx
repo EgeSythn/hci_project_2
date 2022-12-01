@@ -1,12 +1,4 @@
-import {
-  AppShell,
-  useMantineTheme,
-  Header,
-  Image,
-  Text,
-  Title,
-  Center,
-} from "@mantine/core";
+import { Image, Center } from "@mantine/core";
 import headerbackground from "../assets/headerbackground.png";
 
 function DividerImage(props) {
