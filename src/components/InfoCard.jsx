@@ -1,45 +1,72 @@
-import { Container, Title, Center, Box } from "@mantine/core";
+import { Title, Center, Box, Text, Stack } from "@mantine/core";
+import { faker } from "@faker-js/faker";
 
 function InfoCard(props) {
   const { top, bottom } = props;
   return (
     <>
       <Title
-        order={2}
+        order={3}
         style={{
-          paddingLeft: `2.5%`,
+          paddingLeft: `7.5%`,
           paddingTop: `${top}%`,
-          paddingBottom: `5%`,
+          paddingBottom: `2.5%`,
           fontFamily: "sans-serif",
         }}
       >
         __TOPIC NAME__
       </Title>
-      <Box
-        style={{
-          paddingBottom: `${bottom}%`,
-        }}
-        sx={(theme) => ({
-          backgroundColor:
-            theme.colorScheme === "dark"
-              ? theme.colors.dark[6]
-              : theme.colors.gray[0],
-          textAlign: "center",
-          padding: theme.spacing.xl,
-          borderRadius: theme.radius.md,
-          cursor: "pointer",
-
-          "&:hover": {
+      <Center>
+        <Box
+          style={{
+            paddingBottom: `${bottom}%`,
+            width: "80%",
+          }}
+          sx={(theme) => ({
             backgroundColor:
               theme.colorScheme === "dark"
-                ? theme.colors.dark[5]
-                : theme.colors.gray[1],
-          },
-        })}
+                ? theme.colors.dark[6]
+                : theme.colors.gray[0],
+            textAlign: "center",
+            padding: theme.spacing.xl,
+            borderRadius: theme.radius.md,
+            cursor: "pointer",
+
+            "&:hover": {
+              backgroundColor:
+                theme.colorScheme === "dark"
+                  ? theme.colors.dark[5]
+                  : theme.colors.gray[1],
+            },
+          })}
+        >
+          <Center style={{ paddingTop: "8%", paddingBottom: "4%" }}>
+            __GRAPH__
+          </Center>
+        </Box>
+      </Center>
+      <Title
+        order={4}
+        style={{
+          paddingLeft: `12.5%`,
+          paddingTop: `2.5%`,
+          paddingBottom: `2.5%`,
+          fontFamily: "sans-serif",
+        }}
       >
-        <Center style={{ fontFamily: "sans-serif" }}>__GRAPH__</Center>
-      </Box>
-      <Title order={3}></Title>
+        Discussion
+      </Title>
+      <Center>
+        <Text
+          style={{
+            paddingBottom: `5%`,
+            fontFamily: "sans-serif",
+            width: "75%",
+          }}
+        >
+          &emsp; &emsp;{faker.lorem.paragraphs()}
+        </Text>
+      </Center>
     </>
   );
 }

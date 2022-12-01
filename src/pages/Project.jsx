@@ -63,17 +63,32 @@ function Project() {
       >
         &emsp; &emsp;{faker.lorem.paragraphs()}
       </Text>
-      <DividerImage alt="separator 1" />
 
+      {/* Data Visualizations */}
+      <DividerImage alt="separator 2" size={50} />
+
+      <Title
+        order={2}
+        style={{
+          paddingLeft: `2.5%`,
+          fontFamily: "sans-serif",
+        }}
+      >
+        Wealth & Health Inequality by Data
+      </Title>
       {/* Section 1*/}
       <InfoCard top={2.5} bottom={5} />
-      <DividerImage alt="separator 2" />
+      <DividerImage alt="separator 2" size={50} />
       {/* Section 2*/}
       <InfoCard top={2.5} bottom={5} />
-      <DividerImage alt="separator 3" />
+      <DividerImage alt="separator 3" size={50} />
       {/* Section 3*/}
       <InfoCard top={2.5} bottom={5} />
-      <DividerImage alt="separator 3" />
+      <DividerImage alt="separator 4" size={50} />
+      {/* Section 3*/}
+      <InfoCard top={2.5} bottom={5} />
+
+      <DividerImage alt="separator 2" size={50} />
 
       {/* Conclusion & Remarks */}
       <Title
