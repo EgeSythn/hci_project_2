@@ -16,6 +16,7 @@ function Introduction() {
       >
         What is this Project About ?
       </Title>
+      <hr style={{ width: "95%" }} />
       <Text
         style={{
           paddingTop: "2.5%",

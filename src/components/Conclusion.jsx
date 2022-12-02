@@ -8,12 +8,13 @@ function Conclusion() {
         order={2}
         style={{
           paddingLeft: `2.5%`,
-          paddingTop: `2.5%`,
+          paddingTop: `5%`,
           fontFamily: "sans-serif",
         }}
       >
         Final Remarks and Conclusion
       </Title>
+      <hr style={{ width: "95%" }} />
       <Text
         style={{
           paddingTop: "2.5%",
