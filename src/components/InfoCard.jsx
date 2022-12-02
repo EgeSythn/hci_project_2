@@ -1,15 +1,8 @@
 import { Title, Center, Box, Text } from "@mantine/core";
 import { faker } from "@faker-js/faker";
-import {
-  RadialBarChart,
-  RadialBar,
-  Legend,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
 
 function InfoCard(props) {
-  const { top, bottom, data } = props;
+  const { top, bottom, chart } = props;
   return (
     <>
       <Title
@@ -49,36 +42,7 @@ function InfoCard(props) {
         >
           <Title order={3}>Country GDP's ($Billions)</Title>
           <Center style={{ paddingTop: "8%", paddingBottom: "4%" }}>
-            <ResponsiveContainer width="100%" height={1000}>
-              <RadialBarChart
-                data={data}
-                startAngle={270}
-                endAngle={540}
-                innerRadius="20%"
-                outerRadius="70%"
-              >
-                <RadialBar
-                  isAnimationActive={true}
-                  minAngle={30}
-                  label={{
-                    fill: "#000",
-                    position: "insideStart",
-                    name: "name",
-                  }}
-                  dataKey="USD"
-                  clockWise
-                />
-                <Legend
-                  iconSize={25}
-                  iconType="circle"
-                  width="100%"
-                  layout="horizontal"
-                  verticalAlign="top"
-                  align="center"
-                />
-                <Tooltip />
-              </RadialBarChart>
-            </ResponsiveContainer>
+            {chart}
           </Center>
         </Box>
       </Center>

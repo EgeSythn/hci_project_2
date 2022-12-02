@@ -5,6 +5,7 @@ import AppFooter from "../components/AppFooter.jsx";
 import Conclusion from "../components/Conclusion.jsx";
 import DividerImage from "../components/DividerImage.jsx";
 import Introduction from "../components/Introduction.jsx";
+import RadBarChart from "../charts/RadBarChart";
 
 const data1 = [
   { name: "Poland", USD: 597, fill: "#E57373" },
@@ -72,19 +73,19 @@ function Project() {
       <hr style={{ width: "95%" }} />
 
       {/* Section 1*/}
-      <InfoCard top={2.5} bottom={5} data={data1} />
+      <InfoCard top={2.5} bottom={5} chart={<RadBarChart data={data1} />} />
       <DividerImage alt="separator 2" size={50} />
 
       {/* Section 2*/}
-      <InfoCard top={2.5} bottom={5} data={data1} />
+      <InfoCard top={2.5} bottom={5} />
       <DividerImage alt="separator 3" size={50} />
 
       {/* Section 3*/}
-      <InfoCard top={2.5} bottom={5} data={data1} />
+      <InfoCard top={2.5} bottom={5} />
       <DividerImage alt="separator 4" size={50} />
 
       {/* Section 3*/}
-      <InfoCard top={2.5} bottom={5} data={data1} />
+      <InfoCard top={2.5} bottom={5} />
       {/* Conclusion & Remarks */}
       <Conclusion />
     </AppShell>
