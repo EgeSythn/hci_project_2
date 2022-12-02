@@ -16,7 +16,7 @@
 >
 > For our exploration, the resources of **[Inequality.org](https://inequality.org/)** have been utilized
 
-[![Inequality.org Logo](/src/assets/inequality_logo.png)](https://inequality.org/)
+[![Inequality.org Logo](/src/assets/inequality_logo.png)](https://inequality.org/facts/global-inequality/#global-wealth-inequality)
 
 ## Getting Started
 > You can find a deployed version of the project [here](https://egesythn.github.io/hci_project_2/)
@@ -43,9 +43,9 @@ yarn clean_dev
 ```
 
 ## Libraries
-> [Recharts](https://recharts.org/en-US/api) has been used as the visualization library
+> [Recharts](https://recharts.org/en-US/) has been used as the visualization library
 > 
 > Find more about Recharts
 
-[<img src="https://miro.medium.com/max/1400/1*Fwiw0oM1J_HIQZFWcaBPYw.png">](https://recharts.org/en-US/) 
+[<img src="https://miro.medium.com/max/1400/1*Fwiw0oM1J_HIQZFWcaBPYw.png">](https://recharts.org/en-US/api) 
 
