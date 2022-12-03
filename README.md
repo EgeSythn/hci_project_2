@@ -43,15 +43,12 @@ yarn clean_dev
 ```
 
 ## Libraries & Technologies
+> This is a Vite project, and Yarn has been utilized as the package manager
+>
 > [Recharts](https://recharts.org/en-US/) has been used as the visualization library
 > 
 > Find more about Recharts
 
 [<img src="https://miro.medium.com/max/1400/1*Fwiw0oM1J_HIQZFWcaBPYw.png">](https://recharts.org/en-US/api) 
 >
-> This is a Vite project, and Yarn has been utilized as the package manager
-
-[<img src="https://vitejs.dev/logo-with-shadow.png">](https://vitejs.dev/)
-
-[<img src="https://classic.yarnpkg.com/assets/og_image.png">](https://yarnpkg.com/)
 

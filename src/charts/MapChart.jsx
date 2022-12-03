@@ -7,6 +7,7 @@ import {
   Geography,
 } from "react-simple-maps";
 import ReactTooltip from "react-tooltip";
+import features from "../assets/features.json";
 
 const MapChart = (props) => {
   const { mapContent, setTooltipContent } = props;
@@ -23,7 +24,7 @@ const MapChart = (props) => {
         >
           <ComposableMap>
             <ZoomableGroup>
-              <Geographies geography="../../public/features.json">
+              <Geographies geography={features}>
                 {({ geographies }) =>
                   geographies.map((geo) => (
                     <Geography
