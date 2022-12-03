@@ -23,7 +23,7 @@ const MapChart = (props) => {
         >
           <ComposableMap>
             <ZoomableGroup>
-              <Geographies geography="/features.json">
+              <Geographies geography="./features.json">
                 {({ geographies }) =>
                   geographies.map((geo) => (
                     <Geography
