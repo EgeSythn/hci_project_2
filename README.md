@@ -53,5 +53,5 @@ yarn clean_dev
 
 [<img src="https://vitejs.dev/logo-with-shadow.png">](https://vitejs.dev/)
 
-[<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmfxuQNsNG-WTSyYpPS87Hm-YpiHx5_NJBXp60P-KCfQM1c-lPQavnjHKwWO_2wL4Roso&usqp=CAU">](https://yarnpkg.com/)
+[<img src="https://classic.yarnpkg.com/assets/og_image.png">](https://yarnpkg.com/)
 
