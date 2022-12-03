@@ -1,5 +1,5 @@
 import { Center, Text } from "@mantine/core";
-import React, { memo } from "react";
+import React from "react";
 import {
   ZoomableGroup,
   ComposableMap,
@@ -76,4 +76,4 @@ const MapChart = (props) => {
   );
 };
 
-export default memo(MapChart);
+export default MapChart;
