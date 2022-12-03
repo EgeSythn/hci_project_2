@@ -1,4 +1,4 @@
-import { Box, Center, Text } from "@mantine/core";
+import { Center, Text } from "@mantine/core";
 import React, { memo } from "react";
 import {
   ZoomableGroup,
@@ -13,28 +13,13 @@ const MapChart = (props) => {
   return (
     <>
       <Center style={{ paddingTop: "2.5%" }}>
-        <Box
-          data-tip=""
+        <div
+          data-tip
           style={{
             width: "80%",
+            border: "1px solid lightgray",
+            borderRadius: "20px",
           }}
-          sx={(theme) => ({
-            backgroundColor:
-              theme.colorScheme === "dark"
-                ? theme.colors.dark[6]
-                : theme.colors.gray[0],
-            textAlign: "center",
-            padding: theme.spacing.xl,
-            borderRadius: theme.radius.md,
-            cursor: "pointer",
-
-            "&:hover": {
-              backgroundColor:
-                theme.colorScheme === "dark"
-                  ? theme.colors.dark[5]
-                  : theme.colors.gray[1],
-            },
-          })}
         >
           <ComposableMap>
             <ZoomableGroup>
@@ -73,6 +58,8 @@ const MapChart = (props) => {
               </Geographies>
             </ZoomableGroup>
           </ComposableMap>
+        </div>
+        {mapContent ? (
           <ReactTooltip multiline={true}>
             <Center>
               <Text>{mapContent[0]}</Text>
@@ -81,7 +68,9 @@ const MapChart = (props) => {
               <Text>{mapContent[1]}</Text>
             </Center>
           </ReactTooltip>
-        </Box>
+        ) : (
+          <></>
+        )}
       </Center>
     </>
   );
