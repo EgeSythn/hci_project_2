@@ -21,7 +21,8 @@ import { useState } from "react";
 function Project() {
   const theme = useMantineTheme();
   const [mapContent, setMapContent] = useState([]);
-  const data1 = getData().billionaire_country_wealth;
+  const data_billionaire = getData().billionaire_country_wealth;
+  const data_covid = getData().state_covid_deaths_by_race;
 
   return (
     <AppShell
@@ -71,7 +72,7 @@ function Project() {
         bottom={5}
         name={"Wealth Disparity & Hoarding"}
         graphTitle={"Country GDP's ($Billions)"}
-        chart={<RadBarChart data={data1} />}
+        chart={<RadBarChart data={data_billionaire} />}
       />
       <DividerImage alt="separator 2" size={50} />
 
