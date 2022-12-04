@@ -42,7 +42,7 @@ function InfoCard(props) {
               })}
             >
               <Title order={3}>{graphTitle}</Title>
-              <Center style={{ paddingTop: "8%", paddingBottom: "4%" }}>
+              <Center style={{ paddingTop: "2%", paddingBottom: "4%" }}>
                 {chart}
               </Center>
             </Box>

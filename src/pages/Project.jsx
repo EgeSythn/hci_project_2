@@ -11,6 +11,7 @@ import DividerImage from "../components/DividerImage.jsx";
 import Introduction from "../components/Introduction.jsx";
 import Conclusion from "../components/Conclusion.jsx";
 import AppFooter from "../components/AppFooter.jsx";
+import RegBarChart from "../charts/RegBarChart.jsx";
 import AppHeader from "../components/AppHeader.jsx";
 import InfoCard from "../components/InfoCard.jsx";
 import RadBarChart from "../charts/RadBarChart";
@@ -138,7 +139,14 @@ function Project() {
       <DividerImage alt="separator 3" size={50} />
 
       {/* Section 3*/}
-      <InfoCard top={2.5} bottom={5} />
+      <InfoCard
+        helper={"render_with_box"}
+        top={2.5}
+        bottom={5}
+        name={"Covid-19 Impact and Racial Health Inequality"}
+        graphTitle={"Covid-19 Statistics by State"}
+        chart={<RegBarChart data={data_covid} />}
+      />
       <DividerImage alt="separator 4" size={50} />
 
       {/* Section 3*/}
