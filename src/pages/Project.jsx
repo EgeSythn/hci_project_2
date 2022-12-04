@@ -22,7 +22,6 @@ function Project() {
   const theme = useMantineTheme();
   const [mapContent, setMapContent] = useState([]);
   const data1 = getData().billionaire_country_wealth;
-  const data2 = getData().insulin_legend;
 
   return (
     <AppShell
