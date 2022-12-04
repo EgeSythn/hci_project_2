@@ -85,7 +85,11 @@ function RadBarChart(props) {
             <Checkbox
               key={index}
               icon={IconX}
-              label={<Text color={item.fill}>{item.name}</Text>}
+              label={
+                <Text fw={700} size={17.5} color={item.fill}>
+                  {item.name}
+                </Text>
+              }
               color={`${item.fill}`}
               onClick={(event) => {
                 handleOnClick(item, index, event);
