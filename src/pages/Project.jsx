@@ -209,14 +209,16 @@ function Project() {
           " gap when it comes to healthcare. "
         }
         discussion={
-          "It is revealing to realize that the 10 richest people in the world" +
-          " can have more wealth than entire countries. A shocking comparison we can make" +
-          " is with Brazil, which has a population of approximately 216 million peope." +
-          " Seeing that 216 million people have the same collective wealth as 10 top billionaires" +
-          " is a disturbing reflection to the wealth disparity in the world, and how resources" +
-          " have been hoarded by such billionaires to fullfill their own needs. Such" +
-          " inequalities in wealth, although scary on their own, often lead to more severe" +
-          " inequalities, especailly in health."
+          "The data shows the racial disparity when it comes to health insurance, with" + 
+          " the Black, Hispanic, and American Indians and Alaska Natives communities being" + 
+          " far more likely to be either uninsured or insured through a public offering. We can see" + 
+          " that private insurance, for many of these communities are less likely to be acquired," + 
+          " which displays the overall racial inequality that US citizens face within healthcare." + 
+          " Such inequalities make health less accessible for such communities and make easily" + 
+          " avodiable, treatable or curable diseases far more deadly and impactful for them." +
+          " A far more disturbing reality is that the same communities are more likely" + 
+          " to postpone or alltogether avoid getting medical care due to the associated costs, and" + 
+          " the lack of robust public insurance offerings."
         }
       />
       <DividerImage alt="separator 4" size={50} />
@@ -230,23 +232,21 @@ function Project() {
         graphTitle={"Covid-19 Statistics by State"}
         chart={<RegBarChart data={data_covid} />}
         introduction={
-          "A significant problem in modern society is the overall" +
-          " wealth gap that has been created. Recently, worrying trend of billionaires" +
-          " engaging in self-fullfilling acquisitions has been visible, with the" +
-          " acqusition of Twitter by Elon Musk. Such trends are troubling, when in todays" +
-          " society, where many people do not have enough resources to afford basic amenities" +
-          " let alone luxury or self-indulgence. Perhaps the best demonstration of the wealth" +
-          " disparity rampant in global society, is the following chart."
+          "Racial inequality, and its health impacts, can be clearly seen in the recent" + 
+          " and still ongoing Covid-19 pandemic. A state-by-state comparison of state populations" + 
+          " Covid cases and Covid deaths is helpful in identifying how Covid-19 has differently" + 
+          " affected communities."
         }
         discussion={
-          "It is revealing to realize that the 10 richest people in the world" +
-          " can have more wealth than entire countries. A shocking comparison we can make" +
-          " is with Brazil, which has a population of approximately 216 million peope." +
-          " Seeing that 216 million people have the same collective wealth as 10 top billionaires" +
-          " is a disturbing reflection to the wealth disparity in the world, and how resources" +
-          " have been hoarded by such billionaires to fullfill their own needs. Such" +
-          " inequalities in wealth, although scary on their own, often lead to more severe" +
-          " inequalities, especailly in health."
+          "A close inspection of the above data can reveal that minority communities" + 
+          " most often comprise a bigger portion of Covid cases and deaths, despite making up" + 
+          " a smaller portion of the state population. This reveals how inequalities in healthcare" + 
+          " have impacted these communities disproportionately because of aforementioned racial inequalities" + 
+          " in terms of access to insurance and wealth inequality. There can be potentially" + 
+          " many factors that play a role in such differences, especially in the politically charged" + 
+          " environment of today's world where trust in the government has significantly diminished." + 
+          " However, the data also presents clear racial divides that further the unequal systems" + 
+          " we have in the United States of America."
         }
       />
 
