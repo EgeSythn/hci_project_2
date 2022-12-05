@@ -23,7 +23,7 @@
 >
 > 
 > - [Inequality.org: Global Inequality](https://inequality.org/facts/global-inequality/)
-> - [US News & World Report: Health Insurance Coverage Varies Broadly by Race, Income]https://www.usnews.com/news/health-news/articles/2022-09-08/health-insurance-coverage-varies-broadly-by-race-income)
+> - [US News & World Report: Health Insurance Coverage Varies Broadly by Race, Income](https://www.usnews.com/news/health-news/articles/2022-09-08/health-insurance-coverage-varies-broadly-by-race-income)
 > - [Cost of Insulin in Developing Countries](https://experiment.com/u/3ayn7A)
 > - [US Covid Statistics by States](https://static-content.springer.com/esm/art%3A10.1007%2Fs40615-020-00833-4/MediaObjects/40615_2020_833_MOESM10_ESM.pdf)
 > - [Cost of Insulin](https://worldpopulationreview.com/country-rankings/cost-of-insulin-by-country)
