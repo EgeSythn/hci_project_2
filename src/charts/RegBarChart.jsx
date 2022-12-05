@@ -170,7 +170,7 @@ function RegBarChart(props) {
           fontFamily: "sans-serif",
         }}
       >
-        Death
+        Deaths
       </Title>
       <BarChart data={currDeathData} width={600} height={200} layout="vertical">
         <XAxis hide axisLine={false} type="number" />

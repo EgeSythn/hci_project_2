@@ -72,6 +72,11 @@ function RadBarChart(props) {
           <Tooltip content={<CustomTooltip />} />
         </RadialBarChart>
       </ResponsiveContainer>
+      <Center>
+        <Text fw={500} size={12}>
+          Choose to remove or re-add values to the chart
+        </Text>
+      </Center>
       <Flex
         mih={50}
         gap="xl"
