@@ -77,6 +77,25 @@ function Project() {
         name={"Wealth Disparity & Hoarding"}
         graphTitle={"Country GDP's ($Billions)"}
         chart={<RadBarChart data={data_billionaire} />}
+        introduction={
+          "A significant problem in modern society is the overall" +
+          " wealth gap that has been created. Recently, worrying trend of billionaires" +
+          " engaging in self-fullfilling acquisitions has been visible, with the" +
+          " acqusition of Twitter by Elon Musk. Such trends are troubling, when in todays" +
+          " society, where many people do not have enough resources to afford basic amenities" +
+          " let alone luxury or self-indulgence. Perhaps the best demonstration of the wealth" +
+          " disparity rampant in global society, is the following chart."
+        }
+        discussion={
+          "It is revealing to realize that the 10 richest people in the world" +
+          " can have more wealth than entire countries. A shocking comparison we can make" +
+          " is with Brazil, which has a population of approximately 216 million peope." +
+          " Seeing that 216 million people have the same collective wealth as 10 top billionaires" +
+          " is a disturbing reflection to the wealth disparity in the world, and how resources" +
+          " have been hoarded by such billionaires to fullfill their own needs. Such" +
+          " inequalities in wealth, although scary on their own, often lead to more severe" +
+          " inequalities, especailly in health."
+        }
       />
       <DividerImage alt="separator 2" size={50} />
 
@@ -88,6 +107,17 @@ function Project() {
         name={"Health Accessibility"}
         graphTitle={"Insulin Prices Across the World ($USD)"}
         chart={undefined}
+        introduction={
+          "Access to health is not just a human right, but it is a necessity. Modern day" +
+          " healthcare is advanced and has many resources to offer for common illnesses." +
+          " However, wealth inequality and corporations taking advantage of vulnerable people" +
+          " is a far more complicated aspect when in comes to accessibility of healthcare." +
+          " This is apparently the case in the United States, which is the only first world" +
+          " country to not offer any socialized healthcare services to its citizens." +
+          " The following visualization of average insulin prices around the world is a glaring" +
+          " examples of the failures of the healthcare system in the United States and the" +
+          " inequalities US citizens face."
+        }
       />
       <Flex
         style={{ paddingTop: "2.5%" }}
@@ -133,10 +163,33 @@ function Project() {
             width: "75%",
           }}
         >
-          &emsp; &emsp;This is an example paragraph to prevent the graph from
-          moving in place. The faker data, since it changes during each
-          rerender, moves the graph due to the changes in length, which is not
-          great!
+          &emsp; &emsp;Insulin is a hormone produced by the pancreas that
+          regulates the blood sugar entry to the body's cells for use as energy.
+          In patients with Diabetes, especially those with <> </>
+          <a href="https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-treatment/art-20044084#:~:text=If%20you%20have%20type%201,levels%20within%20the%20desired%20range.">
+            Type 1 diabetes
+          </a>
+          , insulin therapy is a necessity to replace the insuling the body
+          doesn't produce. The high prices of insulin prices in the US is an
+          unfortunate consequence of the capital oriented system in which
+          companies can profit off of the necessities in people's lives. In
+          socialized healthcare system, such as those in European nations, allow
+          people to easily access insulin and other similar healthcare needs.
+          The US, on the contrary, has seen many people suffer from the lack of
+          such robust healthcare systems.
+          <br />
+          <br />
+          &emsp; &emsp;Recently, <></>
+          <a href="https://www.washingtonpost.com/technology/2022/11/14/twitter-fake-eli-lilly/">
+            Eli Lilly and Company,
+          </a>
+          an American pharmaceutical company, has come under fire when a fake
+          Twitter account announced that "insuling is free now". Many people
+          dependent on insulin, thinking the account was the actual company,
+          rejoiced with the news, which were crushed when the account was
+          revealed to be a 'troll' account. Such heartbreaking stories reveal
+          the inadequate aspects of US healthcare, and the lack of health
+          accessibility in the country.
         </Text>
       </Center>
       <DividerImage alt="separator 3" size={50} />
@@ -149,6 +202,22 @@ function Project() {
         name={"Racial Disparity in Health Accessibility & Affordability"}
         graphTitle={"Insurance Among US Commuinites"}
         chart={<PerAreaChart data={data_insurance} data2={data_impact} />}
+        introduction={
+          "Another important aspect of US society that affects health accessibility and" +
+          " affordability is the racial injustices that are all too common. Data on" +
+          " insurance coverage of US citizen is extremely revealing in terms of the accessibility" +
+          " gap when it comes to healthcare. "
+        }
+        discussion={
+          "It is revealing to realize that the 10 richest people in the world" +
+          " can have more wealth than entire countries. A shocking comparison we can make" +
+          " is with Brazil, which has a population of approximately 216 million peope." +
+          " Seeing that 216 million people have the same collective wealth as 10 top billionaires" +
+          " is a disturbing reflection to the wealth disparity in the world, and how resources" +
+          " have been hoarded by such billionaires to fullfill their own needs. Such" +
+          " inequalities in wealth, although scary on their own, often lead to more severe" +
+          " inequalities, especailly in health."
+        }
       />
       <DividerImage alt="separator 4" size={50} />
 
@@ -160,6 +229,25 @@ function Project() {
         name={"Covid-19 Impact and Racial Health Inequality"}
         graphTitle={"Covid-19 Statistics by State"}
         chart={<RegBarChart data={data_covid} />}
+        introduction={
+          "A significant problem in modern society is the overall" +
+          " wealth gap that has been created. Recently, worrying trend of billionaires" +
+          " engaging in self-fullfilling acquisitions has been visible, with the" +
+          " acqusition of Twitter by Elon Musk. Such trends are troubling, when in todays" +
+          " society, where many people do not have enough resources to afford basic amenities" +
+          " let alone luxury or self-indulgence. Perhaps the best demonstration of the wealth" +
+          " disparity rampant in global society, is the following chart."
+        }
+        discussion={
+          "It is revealing to realize that the 10 richest people in the world" +
+          " can have more wealth than entire countries. A shocking comparison we can make" +
+          " is with Brazil, which has a population of approximately 216 million peope." +
+          " Seeing that 216 million people have the same collective wealth as 10 top billionaires" +
+          " is a disturbing reflection to the wealth disparity in the world, and how resources" +
+          " have been hoarded by such billionaires to fullfill their own needs. Such" +
+          " inequalities in wealth, although scary on their own, often lead to more severe" +
+          " inequalities, especailly in health."
+        }
       />
 
       {/* Conclusion & Remarks */}
