@@ -133,8 +133,8 @@ function Project() {
           sx={(theme) => ({
             height: 40,
             backgroundImage: theme.fn.gradient({
-              from: "#2874A6",
-              to: "#B03A2E",
+              from: "#0078C7",
+              to: "#FF1900",
               deg: 45,
             }),
             width: "70%",
