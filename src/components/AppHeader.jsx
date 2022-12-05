@@ -33,7 +33,7 @@ export function AppHeader() {
             }}
             size={40}
           >
-            Wealth, Health and Racial Inequality
+            Wealth, Health, and Racial Inequality
           </Title>
         </Center>
       </BackgroundImage>

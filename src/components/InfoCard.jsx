@@ -27,7 +27,7 @@ function InfoCard(props) {
       <Text
         style={{
           paddingBottom: "2.5%",
-          paddingLeft: "5%",
+          paddingLeft: "10%",
           paddingRight: "5%",
           fontFamily: "sans-serif",
         }}

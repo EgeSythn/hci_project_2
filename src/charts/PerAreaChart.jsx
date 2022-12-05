@@ -33,7 +33,6 @@ function PerAreaChart(props) {
   const [currData2, setCurrData2] = useState([data2[0], data2[1]]);
 
   const handleOnChange = (event) => {
-    console.log(event);
     let tempArr = [];
     let tempArr2 = [];
     event.forEach((item) => {
