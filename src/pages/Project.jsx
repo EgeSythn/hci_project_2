@@ -173,10 +173,10 @@ function Project() {
           doesn't produce. The high prices of insulin prices in the US is an
           unfortunate consequence of the capital oriented system in which
           companies can profit off of the necessities in people's lives. In
-          socialized healthcare system, such as those in European nations, allow
-          people to easily access insulin and other similar healthcare needs.
-          The US, on the contrary, has seen many people suffer from the lack of
-          such robust healthcare systems.
+          socialized healthcare systems, such as those in European nations,
+          allow people to easily access insulin and other similar healthcare
+          needs. The US, on the contrary, has seen many people suffer from the
+          lack of such robust healthcare systems.
           <br />
           <br />
           &emsp; &emsp;Recently, <></>
@@ -184,7 +184,7 @@ function Project() {
             Eli Lilly and Company,
           </a>
           an American pharmaceutical company, has come under fire when a fake
-          Twitter account announced that "insuling is free now". Many people
+          Twitter account announced that "insulin is free now". Many people
           dependent on insulin, thinking the account was the actual company,
           rejoiced with the news, which were crushed when the account was
           revealed to be a 'troll' account. Such heartbreaking stories reveal
@@ -209,15 +209,15 @@ function Project() {
           " gap when it comes to healthcare. "
         }
         discussion={
-          "The data shows the racial disparity when it comes to health insurance, with" + 
-          " the Black, Hispanic, and American Indians and Alaska Natives communities being" + 
-          " far more likely to be either uninsured or insured through a public offering. We can see" + 
-          " that private insurance, for many of these communities are less likely to be acquired," + 
-          " which displays the overall racial inequality that US citizens face within healthcare." + 
-          " Such inequalities make health less accessible for such communities and make easily" + 
+          "The data shows the racial disparity when it comes to health insurance, with" +
+          " the Black, Hispanic, and American Indians and Alaska Natives communities being" +
+          " far more likely to be either uninsured or insured through a public offering. We can see" +
+          " that private insurance, for many of these communities are less likely to be acquired," +
+          " which displays the overall racial inequality that US citizens face within healthcare." +
+          " Such inequalities make health less accessible for such communities and make easily" +
           " avodiable, treatable or curable diseases far more deadly and impactful for them." +
-          " A far more disturbing reality is that the same communities are more likely" + 
-          " to postpone or alltogether avoid getting medical care due to the associated costs, and" + 
+          " A far more disturbing reality is that the same communities are more likely" +
+          " to postpone or alltogether avoid getting medical care due to the associated costs, and" +
           " the lack of robust public insurance offerings."
         }
       />
@@ -232,21 +232,26 @@ function Project() {
         graphTitle={"Covid-19 Statistics by State"}
         chart={<RegBarChart data={data_covid} />}
         introduction={
-          "Racial inequality, and its health impacts, can be clearly seen in the recent" + 
-          " and still ongoing Covid-19 pandemic. A state-by-state comparison of state populations" + 
-          " Covid cases and Covid deaths is helpful in identifying how Covid-19 has differently" + 
-          " affected communities."
+          "We have also extracted data on all the states with respect to race" +
+          " distribution. Though different states lie in diverse condition," +
+          " generally speaking, we have observed that African Americans have a" +
+          " higher rate of COVID-19 infection and a higher death rate. The number" +
+          " of African Americans infected by COVID-19 is 64,605 (1981 cases per million)" +
+          " with the number of deaths reaching 6181 (211 deaths per million), while the" +
+          " number of Whites is 104,914 (658 cases per million) infected and 9806" +
+          " (76 deaths per million) dead. The number of infected Latinos and Asians" +
+          " per million, as defined in the reports, is 947 and 390, while the rate of mortality" +
+          " (per million) is 82 and 52 respectively."
         }
         discussion={
-          "A close inspection of the above data can reveal that minority communities" + 
-          " most often comprise a bigger portion of Covid cases and deaths, despite making up" + 
-          " a smaller portion of the state population. This reveals how inequalities in healthcare" + 
-          " have impacted these communities disproportionately because of aforementioned racial inequalities" + 
-          " in terms of access to insurance and wealth inequality. There can be potentially" + 
-          " many factors that play a role in such differences, especially in the politically charged" + 
-          " environment of today's world where trust in the government has significantly diminished." + 
-          " However, the data also presents clear racial divides that further the unequal systems" + 
-          " we have in the United States of America."
+          "The results of the death rate and infection rate highly correlated" +
+          " with medical care cost and insurance from the section above. Hence" +
+          " the reason of higher rate of COVID-19 infection and a higher death rate," +
+          " to some extend, lies in lower medical care cost and insurance." +
+          " In a nutshell, as the association between COVID-19-related fatality" +
+          " and infection is different among different race and health status," +
+          " it is important to further study the impact of COVID-19 prevention and" +
+          " control policy in the at-risk population."
         }
       />
 
