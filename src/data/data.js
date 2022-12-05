@@ -57,36 +57,27 @@ const insurance_coverage_by_race = [
   },
 ];
 
+// Did not get needed medical care due to cost
 const impact_by_race = [
   {
     name: "White",
-    "Did not get needed medical care due to cost": 6.2,
-    "Delayed getting medical care due to cost": 7.3,
-    "Did not take medication as prescribed to save money": 7.6,
+    value: 6.2,
   },
   {
     name: "Black",
-    "Did not get needed medical care due to cost": 7.9,
-    "Delayed getting medical care due to cost": 8.3,
-    "Did not take medication as prescribed to save money": 11.1,
+    value: 7.9,
   },
   {
     name: "Hispanic",
-    "Did not get needed medical care due to cost": 9.5,
-    "Delayed getting medical care due to cost": 10.8,
-    "Did not take medication as prescribed to save money": 12.4,
+    value: 9.5,
   },
   {
     name: "Asian",
-    "Did not get needed medical care due to cost": 3.5,
-    "Delayed getting medical care due to cost": 3.5,
-    "Did not take medication as prescribed to save money": 5,
+    value: 3.5,
   },
   {
     name: "AIAN",
-    "Did not get needed medical care due to cost": 8.3,
-    "Delayed getting medical care due to cost": 6.1,
-    "Did not take medication as prescribed to save money": 11.6,
+    value: 8.3,
   },
 ];
 

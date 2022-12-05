@@ -1,4 +1,5 @@
-import { Center, Flex, MultiSelect, Select, Stack, Text } from "@mantine/core";
+import { Center, Flex, MultiSelect, Title, Stack, Text } from "@mantine/core";
+import { color } from "d3";
 import { useState } from "react";
 import {
   AreaChart,
@@ -24,12 +25,12 @@ const colorPallette = [
   "#E67E22 ",
 ];
 
-const names = ["White", "Black", "Hispanic", "Asian", "AIAN", "NHOPI"];
+const names = ["White", "Black", "Hispanic", "Asian", "AIAN"];
 
 function PerAreaChart(props) {
   const { data, data2 } = props;
   const [currData, setCurrData] = useState([data[0], data[1]]);
-  const [currData2, setCurrData2] = useState(data2[0], data2[1]);
+  const [currData2, setCurrData2] = useState([data2[0], data2[1]]);
 
   const handleOnChange = (event) => {
     console.log(event);
@@ -104,6 +105,7 @@ function PerAreaChart(props) {
       </g>
     );
   };
+
   const CustomizedYAxisTick = (o) => {
     const { x, y, payload } = o;
     return (
@@ -123,8 +125,26 @@ function PerAreaChart(props) {
     );
   };
 
+  const CustomTooltip = ({ active, payload, label }) => {
+    if (active) {
+      return (
+        <div
+          className="custom-tooltip"
+          style={{
+            backgroundColor: "#ffff",
+            padding: "5px",
+            border: "1px solid #cccc",
+          }}
+        >
+          <label>{`${payload[0].name} : ${payload[0].value}%`}</label>
+        </div>
+      );
+    }
+    return null;
+  };
+
   return (
-    <Stack style={{ paddingTop: "5%" }}>
+    <Stack style={{ paddingTop: "2%" }}>
       <Center>
         <MultiSelect
           label="Community"
@@ -144,6 +164,9 @@ function PerAreaChart(props) {
         wrap="wrap"
       >
         <Stack>
+          <Title order={6} style={{ paddingTop: "2.5%" }}>
+            Insurances Accessibility
+          </Title>
           <AreaChart
             width={500}
             height={500}
@@ -181,60 +204,42 @@ function PerAreaChart(props) {
               stroke="#ffc658"
               fill="#ffc658"
             />
-            <Legend layout="horizontal" verticalAlign="top" align="center" />
+            <Legend />
           </AreaChart>
           <Text fw={500} size={10}>
             * AIAN refers to American Indians and Alaska Natives
-          </Text>
-          <Text fw={500} size={10}>
-            * NHOPI refers to Native Hawaiians and Other Pacific Islanders
           </Text>
         </Stack>
-        <Stack style={{ paddingTop: "5%" }}>
-          <AreaChart
-            width={500}
-            height={500}
-            data={data}
-            stackOffset="expand"
-            margin={{
-              top: 10,
-              right: 10,
-              left: 0,
-              bottom: 10,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" tick={<CustomizedXAxisTick />} />
-            <YAxis tickFormatter={toPercent} />
-            <Tooltip content={renderTooltipContent} />
-            <Area
-              type="monotone"
-              dataKey="Uninsured"
-              stackId="1"
-              stroke="#8884d8"
+        <Stack style={{ paddingTop: "3.5%" }}>
+          <Center>
+            <Title order={6}>
+              Percentage of People Who Did Not Get Needed Medical Care Due to
+              Cost
+            </Title>
+          </Center>
+          <PieChart width={730} height={500}>
+            <Pie
+              data={currData2}
+              color="#000000"
+              dataKey="value"
+              nameKey="name"
+              cx="50%"
+              cy="50%"
+              outerRadius={120}
               fill="#8884d8"
-            />
-            <Area
-              type="monotone"
-              dataKey="Medicaid / Other Public"
-              stackId="1"
-              stroke="#82ca9d"
-              fill="#82ca9d"
-            />
-            <Area
-              type="monotone"
-              dataKey="Private"
-              stackId="1"
-              stroke="#ffc658"
-              fill="#ffc658"
-            />
-            <Legend layout="horizontal" verticalAlign="top" align="center" />
-          </AreaChart>
+            >
+              {currData2.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={colorPallette[index]} />
+              ))}
+            </Pie>
+            <Tooltip content={<CustomTooltip />} />
+            <Legend />
+          </PieChart>
           <Text fw={500} size={10}>
             * AIAN refers to American Indians and Alaska Natives
           </Text>
           <Text fw={500} size={10}>
-            * NHOPI refers to Native Hawaiians and Other Pacific Islanders
+            * Percentages are for comparison, will not add up to a 100
           </Text>
         </Stack>
       </Flex>
