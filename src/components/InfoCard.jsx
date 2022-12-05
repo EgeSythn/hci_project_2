@@ -1,7 +1,16 @@
 import { Title, Center, Box, Text } from "@mantine/core";
 
 function InfoCard(props) {
-  const { helper, top, bottom, name, graphTitle, chart } = props;
+  const {
+    helper,
+    top,
+    bottom,
+    name,
+    graphTitle,
+    chart,
+    introduction,
+    discussion,
+  } = props;
   return (
     <>
       <Title

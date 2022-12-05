@@ -25,15 +25,16 @@ function Introduction() {
           fontFamily: "sans-serif",
         }}
       >
-        &emsp; &emsp;Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry. Lorem Ipsum has been the industry's standard dummy
-        text ever since the 1500s, when an unknown printer took a galley of type
-        and scrambled it to make a type specimen book. It has survived not only
-        five centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+        &emsp; &emsp;Inequality is a reality that is often recognized, however
+        not closely inspected and analayzed. The facets of life that get
+        affected by the constant inequalities that multiple people face on a
+        daily basis is an important area to study, as it can lead to a better
+        understanding of the problems of our global and local socities. Cleverly
+        used, statistics can help us identify were inequalities happen, and who
+        gets affected the worse. Such analysis efforts by social scientists are
+        significant in addressing the biases present in our societies and
+        political systems. In that way, data is an important tool for humanity
+        to understand its mistakes and better itself.
       </Text>
       <Text
         style={{
@@ -42,18 +43,31 @@ function Introduction() {
           fontFamily: "sans-serif",
         }}
       >
-        &emsp; &emsp;Contrary to popular belief, Lorem Ipsum is not simply
-        random text. It has roots in a piece of classical Latin literature from
-        45 BC, making it over 2000 years old. Richard McClintock, a Latin
-        professor at Hampden-Sydney College in Virginia, looked up one of the
-        more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-        going through the cites of the word in classical literature, discovered
-        the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-        1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-        Evil) by Cicero, written in 45 BC. This book is a treatise on the theory
-        of ethics, very popular during the Renaissance. The first line of Lorem
-        Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
-        1.10.32.
+        &emsp; &emsp;Among common injustices in the world, wealth inequality is
+        perhaps the most ubiquitous and recognized type of inequality. However,
+        wealth inequality does not have an isolated affect to our lifes, but
+        rather dictates our access to essential services, one such being health.
+        Wealth is a significant factor in our modern day world, where human
+        rights are sometimes only accessible to the wealthy. In addition, wealth
+        inequality itself is rooted in many different factors, with perhaps one
+        of the most significant factors being racial inequality.
+      </Text>
+      <Text
+        style={{
+          paddingTop: "2.5%",
+          paddingLeft: "5%",
+          paddingRight: "5%",
+          fontFamily: "sans-serif",
+        }}
+      >
+        &emsp; &emsp;The analysis we provide with this project aims to provide a
+        glimpse of how these different factors interact with each other and
+        negatively impact the lives of many. Despite including statistics about
+        global inequality, our analysis dives in more to inequality in the
+        United States, where such inequalities are often more prevalent.
+        Identifying systematic problems and how they lead to inequality will
+        eventually provide the necessary information and resources to make
+        society better.
       </Text>
       <Flex
         gap="xl"
