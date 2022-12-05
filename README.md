@@ -13,13 +13,14 @@
 > This project particularly explores the wealth inequality in the US and the world
 > and aims to analyze how wealth disparity and lack of wealth distribution
 > negatively affect accessible and affordable health services
->
-> For our exploration, the resources of **[Inequality.org](https://inequality.org/)** have been utilized
-
-[![Inequality.org Logo](/src/assets/inequality_logo.png)](https://inequality.org/facts/global-inequality/#global-wealth-inequality)
 
 ### Resources
 > The following resources, and certain datasets within them have been used
+>
+> For our exploration, primarily the resources of **[Inequality.org](https://inequality.org/)** have been utilized, alongside other resources
+
+[![Inequality.org Logo](/src/assets/inequality_logo.png)](https://inequality.org/facts/global-inequality/#global-wealth-inequality)
+>
 > 
 > - [Inequality.org: Global Inequality](https://inequality.org/facts/global-inequality/)
 > - [US News & World Report: Health Insurance Coverage Varies Broadly by Race, Income]https://www.usnews.com/news/health-news/articles/2022-09-08/health-insurance-coverage-varies-broadly-by-race-income)
