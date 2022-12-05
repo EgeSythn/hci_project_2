@@ -55,6 +55,8 @@ function RegBarChart(props) {
         label="State"
         placeholder="Choose a state"
         defaultValue={state_names[0].label}
+        searchable
+        nothingFound="Couldn't find state"
         data={state_names}
         onChange={handleOnChange}
       />

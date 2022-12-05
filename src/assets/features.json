@@ -250,7 +250,7 @@
               ]
             ],
             "id": "CHN",
-            "properties": { "name": "China", "insulin_prices": "No Data", "default_color": "#D6D6DA" }
+            "properties": { "name": "China", "insulin_prices": "$ 2.81 (estimate)", "default_color": "#2874A6" }
           },
           {
             "type": "Polygon",

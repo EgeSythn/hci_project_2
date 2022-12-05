@@ -9,6 +9,7 @@ import {
 } from "@mantine/core";
 import DividerImage from "../components/DividerImage.jsx";
 import Introduction from "../components/Introduction.jsx";
+import PerAreaChart from "../charts/PerAreaChart.jsx";
 import Conclusion from "../components/Conclusion.jsx";
 import AppFooter from "../components/AppFooter.jsx";
 import RegBarChart from "../charts/RegBarChart.jsx";
@@ -24,6 +25,8 @@ function Project() {
   const [mapContent, setMapContent] = useState([]);
   const data_billionaire = getData().billionaire_country_wealth;
   const data_covid = getData().state_covid_deaths_by_race;
+  const data_insurance = getData().insurance_coverage_by_race;
+  const data_impact = getData().impact_by_race;
 
   return (
     <AppShell
@@ -143,14 +146,22 @@ function Project() {
         helper={"render_with_box"}
         top={2.5}
         bottom={5}
+        name={"Racial Disparity in Health Accessibility & Affordability"}
+        graphTitle={"Insurance Among US Commuinites"}
+        chart={<PerAreaChart data={data_insurance} data2={data_impact} />}
+      />
+      <DividerImage alt="separator 4" size={50} />
+
+      {/* Section 4*/}
+      <InfoCard
+        helper={"render_with_box"}
+        top={2.5}
+        bottom={5}
         name={"Covid-19 Impact and Racial Health Inequality"}
         graphTitle={"Covid-19 Statistics by State"}
         chart={<RegBarChart data={data_covid} />}
       />
-      <DividerImage alt="separator 4" size={50} />
 
-      {/* Section 3*/}
-      <InfoCard top={2.5} bottom={5} />
       {/* Conclusion & Remarks */}
       <Conclusion />
     </AppShell>
