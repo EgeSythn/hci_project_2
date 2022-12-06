@@ -17,7 +17,7 @@
 >
 > This project particularly explores the wealth and racial inequalities in the US and the world
 > and aims to analyze how wealth disparity and lack of wealth distribution within minority communities
-> negatively affect accessible and affordable health services.
+> negatively affect accessible and affordable health services
 
 ### Resources
 > The following resources, and certain datasets within them have been used
