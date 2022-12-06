@@ -8,11 +8,16 @@
 - Ege Seyithanoglu
 
 ### Aim
-> Web Visualizations for exploring Accessibility and Design Justice
+> Web Visualizations for exploring Inequalities and Injustices in modern society.
 > 
-> This project particularly explores the wealth inequality in the US and the world
-> and aims to analyze how wealth disparity and lack of wealth distribution
-> negatively affect accessible and affordable health services
+> Explored Topics:
+> - Wealth Inequality
+> - Racial Inequality
+> - Health Inequality
+>
+> This project particularly explores the wealth and racial inequalities in the US and the world
+> and aims to analyze how wealth disparity and lack of wealth distribution within minority communities
+> negatively affect accessible and affordable health services.
 
 ### Resources
 > The following resources, and certain datasets within them have been used
@@ -22,10 +27,10 @@
 [![Inequality.org Logo](/src/assets/inequality_logo.png)](https://inequality.org/facts/global-inequality/#global-wealth-inequality)
 >
 > 
-> - [Inequality.org: Global Inequality](https://inequality.org/facts/global-inequality/)
 > - [US News & World Report: Health Insurance Coverage Varies Broadly by Race, Income](https://www.usnews.com/news/health-news/articles/2022-09-08/health-insurance-coverage-varies-broadly-by-race-income)
-> - [Cost of Insulin in Developing Countries](https://experiment.com/u/3ayn7A)
+> - [Inequality.org: Global Inequality](https://inequality.org/facts/global-inequality/)
 > - [US Covid Statistics by States](https://static-content.springer.com/esm/art%3A10.1007%2Fs40615-020-00833-4/MediaObjects/40615_2020_833_MOESM10_ESM.pdf)
+> - [Cost of Insulin in Developing Countries](https://experiment.com/u/3ayn7A)
 > - [Cost of Insulin](https://worldpopulationreview.com/country-rankings/cost-of-insulin-by-country)
 
 ## Getting Started
