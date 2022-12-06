@@ -58,7 +58,7 @@ yarn clean_dev
 ```
 
 ## Libraries & Technologies
-> This is a [Vite](https://vitejs.dev/) project, and [Yarn](https://yarnpkg.com/) has been utilized as the package manager
+> This is a [React](https://reactjs.org/) project, [Vite](https://vitejs.dev/) has been utilized as the front-end build tool, and [Yarn](https://yarnpkg.com/) has been utilized as the package manager
 >
 > [Recharts](https://recharts.org/en-US/) and [React Simple Maps](https://www.react-simple-maps.io/) has been used as the visualization library
 
