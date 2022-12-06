@@ -8,7 +8,7 @@
 - Ege Seyithanoglu
 
 ### Aim
-> Web Visualizations for exploring Inequalities and Injustices in modern society.
+> Web Visualizations for exploring inequalities and injustices in modern society.
 > 
 > Explored Topics:
 > - Wealth Inequality
