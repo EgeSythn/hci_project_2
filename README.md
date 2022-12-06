@@ -8,21 +8,21 @@
 - Ege Seyithanoglu
 
 ### Aim
-Web Visualizations for exploring inequalities and injustices in modern society.
+> Web Visualizations for exploring inequalities and injustices in modern society.
 >
 Explored Topics:
 - Wealth Inequality
 - Racial Inequality
 - Health Inequality
 >
-This project particularly explores the wealth and racial inequalities in the US and the world
-and aims to analyze how wealth disparity and lack of wealth distribution within minority communities
-negatively affect accessible and affordable health services
+> This project particularly explores the wealth and racial inequalities in the US and the world
+> and aims to analyze how wealth disparity and lack of wealth distribution within minority communities
+> negatively affect accessible and affordable health services
 
 ### Resources
-The following resources, and certain datasets within them have been used
+> The following resources, and certain datasets within them have been used
 >
-For our exploration, primarily the resources of **[Inequality.org](https://inequality.org/)** have been utilized, alongside other resources
+> For our exploration, primarily the resources of **[Inequality.org](https://inequality.org/)** have been utilized, alongside other resources
 
 [![Inequality.org Logo](/src/assets/inequality_logo.png)](https://inequality.org/facts/global-inequality/#global-wealth-inequality)
 >
@@ -37,28 +37,28 @@ For our exploration, primarily the resources of **[Inequality.org](https://inequ
 > You can find a deployed version of the project [here](https://egesythn.github.io/hci_project_2/)
 
 ### For Developers
-Clone the project
+> Clone the project
 ```
 git clone https://github.com/EgeSythn/hci_project_2.git
 ```
->
-Install dependencies
+
+> Install dependencies
 ```
 yarn
 ```
->
-Run the app
+
+> Run the app
 ```
 yarn dev
 ```
->
-Run the app after code clean up
+
+> Run the app after code clean up
 ```
 yarn clean_dev
 ```
->
+
 ## Libraries & Technologies
-This is a [React](https://reactjs.org/) project, [Vite](https://vitejs.dev/) has been utilized as the front-end build tool, and [Yarn](https://yarnpkg.com/) has been utilized as the package manager
+> This is a [React](https://reactjs.org/) project, [Vite](https://vitejs.dev/) has been utilized as the front-end build tool, and [Yarn](https://yarnpkg.com/) has been utilized as the package manager
 >
-[Recharts](https://recharts.org/en-US/) and [React Simple Maps](https://www.react-simple-maps.io/) has been used as the visualization libraries
+> [Recharts](https://recharts.org/en-US/) and [React Simple Maps](https://www.react-simple-maps.io/) has been used as the visualization libraries
 
