@@ -2,18 +2,18 @@
 
 ## Project Details
 ### Group 4
-- Zike Hu
-- Sean O'Connor
-- Rohit Ganji
-- Ege Seyithanoglu
+> - Zike Hu
+> - Sean O'Connor
+> - Rohit Ganji
+> - Ege Seyithanoglu
 
 ### Aim
 > Web Visualizations for exploring inequalities and injustices in modern society.
 >
-Explored Topics:
-- Wealth Inequality
-- Racial Inequality
-- Health Inequality
+> Explored Topics:
+> - Wealth Inequality
+> - Racial Inequality
+> - Health Inequality
 >
 > This project particularly explores the wealth and racial inequalities in the US and the world
 > and aims to analyze how wealth disparity and lack of wealth distribution within minority communities
