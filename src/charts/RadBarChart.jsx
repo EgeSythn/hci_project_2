@@ -6,14 +6,19 @@ import {
   RadialBar,
   Tooltip,
   ResponsiveContainer,
+  Label,
+  LabelList,
 } from "recharts";
 
 function RadBarChart(props) {
   const { data } = props;
-  const [currData, setCurrData] = useState(data);
+  const [currData, setCurrData] = useState([
+    data.find((item) => item.name === "Brazil"),
+    data.find((item) => item.name === "Top Ten Billionaires"),
+  ]);
 
   const handleOnClick = (currItem, index, event) => {
-    if (event.target.checked) {
+    if (!event.target.checked) {
       setCurrData(currData.filter((item) => item.name !== currItem.name));
     } else {
       var newArray = [];
@@ -40,7 +45,7 @@ function RadBarChart(props) {
           <Text fw={700}>&emsp;{val.name}&emsp;</Text>
         </Center>
         <Center>
-          <Text fw={700}>&emsp;$ {val.USD}&emsp;</Text>
+          <Text fw={700}>&emsp;$ {val.USD} Billion&emsp;</Text>
         </Center>
       </div>
     );
@@ -48,33 +53,9 @@ function RadBarChart(props) {
 
   const component = (
     <Stack>
-      <ResponsiveContainer width="100%" height={700}>
-        <RadialBarChart
-          data={currData.sort((a, b) => a.USD - b.USD)}
-          startAngle={270}
-          endAngle={540}
-          innerRadius="20%"
-          outerRadius="70%"
-        >
-          <RadialBar
-            isAnimationActive={true}
-            minAngle={30}
-            label={{
-              fill: "#000",
-              position: "insideStart",
-              name: "name",
-            }}
-            name="name"
-            dataKey="USD"
-            clockWise
-            onMouseOver={() => (tooltip = "USD")}
-          />
-          <Tooltip content={<CustomTooltip />} />
-        </RadialBarChart>
-      </ResponsiveContainer>
       <Center>
         <Text fw={500} size={12}>
-          Choose to remove or re-add values to the chart
+          Choose to add or remove values to the chart
         </Text>
       </Center>
       <Flex
@@ -96,6 +77,9 @@ function RadBarChart(props) {
                 </Text>
               }
               color={`${item.fill}`}
+              defaultChecked={
+                item.name === "Brazil" || item.name === "Top Ten Billionaires"
+              }
               onClick={(event) => {
                 handleOnClick(item, index, event);
               }}
@@ -103,6 +87,36 @@ function RadBarChart(props) {
           );
         })}
       </Flex>
+      {currData.length > 0 ? (
+        <ResponsiveContainer width="100%" height={700}>
+          <RadialBarChart
+            data={currData.sort((a, b) => a.USD - b.USD)}
+            startAngle={135}
+            endAngle={-135}
+            innerRadius="30%"
+            outerRadius="100%"
+          >
+            <RadialBar
+              isAnimationActive={true}
+              minAngle={30}
+              name="name"
+              dataKey="USD"
+              clockWise
+              onMouseOver={() => (tooltip = "USD")}
+            >
+              <LabelList position="insideStart" dataKey="name" fill="#000" />
+              <LabelList dataKey="USD" fill="#000" position="insideEnd" />
+            </RadialBar>
+            <Tooltip content={<CustomTooltip />} />
+          </RadialBarChart>
+        </ResponsiveContainer>
+      ) : (
+        <Center>
+          <Text style={{ paddingTop: "10%" }} fw={700} size={20}>
+            No Data Category Chosen
+          </Text>
+        </Center>
+      )}
     </Stack>
   );
 

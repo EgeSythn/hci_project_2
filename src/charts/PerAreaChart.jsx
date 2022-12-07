@@ -147,9 +147,9 @@ function PerAreaChart(props) {
       <Center>
         <MultiSelect
           label="Community"
-          placeholder="Choose a state"
+          placeholder="Choose a community"
           defaultValue={[names[0], names[1]]}
-          nothingFound="Couldn't find state"
+          nothingFound="No other options"
           data={names}
           onChange={handleOnChange}
         />
@@ -222,10 +222,10 @@ function PerAreaChart(props) {
               color="#000000"
               dataKey="value"
               nameKey="name"
-              cx="50%"
-              cy="50%"
-              outerRadius={120}
+              outerRadius={160}
               fill="#8884d8"
+              startAngle={180}
+              endAngle={0}
             >
               {currData2.map((entry, index) => (
                 <Cell key={`cell-${index}`} fill={colorPallette[index]} />
