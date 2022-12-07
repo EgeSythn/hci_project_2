@@ -11,11 +11,11 @@ const billionaire_country_wealth = [
   { name: "Turkey", USD: 720, fill: "#7986CB" },
   { name: "Switzerland", USD: 752, fill: "#4FC3F7" },
   { name: "Netherlands", USD: 914, fill: "#4DB6AC" },
-  { name: "Indonesia", USD: 1058, fill: "#AED581" },
-  { name: "Mexico", USD: 1074, fill: "#00897B" },
-  { name: "Spain", USD: 1281, fill: "#7CB342" },
-  { name: "Australia", USD: 1328, fill: "#00FF00" },
-  { name: "Brazil", USD: 1445, fill: "#FFF176" },
+  { name: "Indonesia", USD: 1058, fill: "#00897B" },
+  { name: "Mexico", USD: 1074, fill: "#7CB342" },
+  { name: "Spain", USD: 1281, fill: "#C0CA33" },
+  { name: "Australia", USD: 1328, fill: "#AED581" },
+  { name: "Brazil", USD: 1445, fill: "#FFD700" },
   { name: "Top Ten Billionaires", USD: 1447.6, fill: "#FFB74D" },
 ];
 

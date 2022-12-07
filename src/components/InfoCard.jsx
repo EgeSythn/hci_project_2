@@ -56,7 +56,7 @@ function InfoCard(props) {
                   backgroundColor:
                     theme.colorScheme === "dark"
                       ? theme.colors.dark[5]
-                      : theme.colors.gray[1],
+                      : theme.colors.gray[3],
                 },
               })}
             >
