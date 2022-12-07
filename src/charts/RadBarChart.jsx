@@ -1,4 +1,4 @@
-import { Center, Text, Flex, Stack, Checkbox } from "@mantine/core";
+import { Center, Text, Flex, Stack, Checkbox, Container } from "@mantine/core";
 import { IconX } from "@tabler/icons";
 import { useState } from "react";
 import {
@@ -58,41 +58,44 @@ function RadBarChart(props) {
           Choose to add or remove values to the chart
         </Text>
       </Center>
-      <Flex
-        mih={50}
-        gap="xl"
-        justify="center"
-        align="center"
-        direction="row"
-        wrap="wrap"
-      >
-        {data.map((item, index) => {
-          return (
-            <Checkbox
-              key={index}
-              icon={IconX}
-              label={
-                <Text fw={700} size={17.5} color={item.fill}>
-                  {item.name}
-                </Text>
-              }
-              color={`${item.fill}`}
-              defaultChecked={
-                item.name === "Brazil" || item.name === "Top Ten Billionaires"
-              }
-              onClick={(event) => {
-                handleOnClick(item, index, event);
-              }}
-            />
-          );
-        })}
-      </Flex>
+      <Container style={{ width: 800 }}>
+        <Flex
+          mih={50}
+          gap="xl"
+          justify="center"
+          align="center"
+          direction="row"
+          wrap="wrap"
+        >
+          {data.map((item, index) => {
+            return (
+              <Checkbox
+                key={index}
+                icon={IconX}
+                label={
+                  <Text fw={700} size={17.5} color={item.fill}>
+                    {item.name}
+                  </Text>
+                }
+                color={`${item.fill}`}
+                defaultChecked={
+                  item.name === "Brazil" || item.name === "Top Ten Billionaires"
+                }
+                onClick={(event) => {
+                  handleOnClick(item, index, event);
+                }}
+              />
+            );
+          })}
+        </Flex>
+      </Container>
       {currData.length > 0 ? (
         <ResponsiveContainer width="100%" height={700}>
           <RadialBarChart
             data={currData.sort((a, b) => a.USD - b.USD)}
-            startAngle={135}
-            endAngle={-135}
+            startAngle={95}
+            endAngle={-155}
+            barSize={50}
             innerRadius="30%"
             outerRadius="100%"
           >

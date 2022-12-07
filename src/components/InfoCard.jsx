@@ -46,7 +46,7 @@ function InfoCard(props) {
                 backgroundColor:
                   theme.colorScheme === "dark"
                     ? theme.colors.dark[6]
-                    : theme.colors.gray[0],
+                    : theme.colors.gray[2],
                 textAlign: "center",
                 padding: theme.spacing.xl,
                 borderRadius: theme.radius.md,
