@@ -2,10 +2,10 @@
 
 ## Project Details
 ### Group 4
-> - Zike Hu
-> - Sean O'Connor
-> - Rohit Ganji
-> - Ege Seyithanoglu
+> - Zike Hu - researcher
+> - Sean O'Connor - researcher
+> - Rohit Ganji - researcher
+> - Ege Seyithanoglu - developer & researcher
 
 ### Aim
 > Web Visualizations for exploring inequalities and injustices in modern society.
