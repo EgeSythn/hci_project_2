@@ -33,10 +33,7 @@ function Project() {
       padding="md"
       styles={{
         main: {
-          background:
-            theme.colorScheme === "dark"
-              ? theme.colors.dark[8]
-              : theme.colors.gray[0],
+          background: theme.colors.gray[0],
         },
       }}
       header={
@@ -166,7 +163,10 @@ function Project() {
           &emsp; &emsp;Insulin is a hormone produced by the pancreas that
           regulates the blood sugar entry to the body's cells for use as energy.
           In patients with Diabetes, especially those with <> </>
-          <a href="https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-treatment/art-20044084#:~:text=If%20you%20have%20type%201,levels%20within%20the%20desired%20range.">
+          <a
+            href="https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-treatment/art-20044084#:~:text=If%20you%20have%20type%201,levels%20within%20the%20desired%20range."
+            target="_blank"
+          >
             Type 1 diabetes
           </a>
           , insulin therapy is a necessity to replace the insuling the body
@@ -180,7 +180,10 @@ function Project() {
           <br />
           <br />
           &emsp; &emsp;Recently, <></>
-          <a href="https://www.washingtonpost.com/technology/2022/11/14/twitter-fake-eli-lilly/">
+          <a
+            href="https://www.washingtonpost.com/technology/2022/11/14/twitter-fake-eli-lilly/"
+            target="_blank"
+          >
             Eli Lilly and Company,
           </a>
           an American pharmaceutical company, has come under fire when a fake

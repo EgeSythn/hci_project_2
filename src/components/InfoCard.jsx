@@ -11,6 +11,12 @@ function InfoCard(props) {
     introduction,
     discussion,
   } = props;
+
+  const boxStyle = {
+    paddingBottom: `${bottom}%`,
+    width: "90%",
+  };
+
   return (
     <>
       <Title
@@ -38,25 +44,16 @@ function InfoCard(props) {
         <>
           <Center>
             <Box
-              style={{
-                paddingBottom: `${bottom}%`,
-                width: "80%",
-              }}
+              style={{ boxStyle }}
               sx={(theme) => ({
-                backgroundColor:
-                  theme.colorScheme === "dark"
-                    ? theme.colors.dark[6]
-                    : theme.colors.gray[2],
+                backgroundColor: theme.colors.gray[1],
                 textAlign: "center",
                 padding: theme.spacing.xl,
                 borderRadius: theme.radius.md,
                 cursor: "pointer",
 
                 "&:hover": {
-                  backgroundColor:
-                    theme.colorScheme === "dark"
-                      ? theme.colors.dark[5]
-                      : theme.colors.gray[3],
+                  backgroundColor: theme.colors.gray[3],
                 },
               })}
             >

@@ -1,7 +1,5 @@
-import { ActionIcon, Center, Text } from "@mantine/core";
-import { IconRefresh } from "@tabler/icons";
+import { Center, Text } from "@mantine/core";
 import React from "react";
-import { useState } from "react";
 import {
   ZoomableGroup,
   ComposableMap,

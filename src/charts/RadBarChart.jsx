@@ -6,7 +6,6 @@ import {
   RadialBar,
   Tooltip,
   ResponsiveContainer,
-  Label,
   LabelList,
 } from "recharts";
 
@@ -58,7 +57,7 @@ function RadBarChart(props) {
           Choose to add or remove values to the chart
         </Text>
       </Center>
-      <Container style={{ width: 800 }}>
+      <Container style={{ width: "100%" }}>
         <Flex
           mih={50}
           gap="xl"

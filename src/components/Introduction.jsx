@@ -85,6 +85,7 @@ function Introduction() {
             alt="inequality.org logo"
             component="a"
             href="https://inequality.org/facts/global-inequality/#global-wealth-inequality"
+            target="_blank"
           />
         </Tooltip>
         <Tooltip label="GitHub Repository">
@@ -95,6 +96,7 @@ function Introduction() {
             variant="filled"
             component="a"
             href="https://github.com/EgeSythn/hci_project_2"
+            target="_blank"
           >
             <IconBrandGithub size={30} />
           </ActionIcon>

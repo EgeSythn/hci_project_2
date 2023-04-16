@@ -1,5 +1,4 @@
 import { Center, Flex, MultiSelect, Title, Stack, Text } from "@mantine/core";
-import { color } from "d3";
 import { useState } from "react";
 import {
   AreaChart,
@@ -8,11 +7,9 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  ResponsiveContainer,
   Legend,
   PieChart,
   Pie,
-  Sector,
   Cell,
 } from "recharts";
 
